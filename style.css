@@ -1,0 +1,162 @@
+   :root {
+            --primary-color: #ffaf33;
+            --secondary-color: #ff5050;
+            --text-bg: rgba(0, 0, 0, 0.75);
+            --white: #fff;
+            --hover-glow: rgba(255, 255, 255, 0.5);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding-top: 80px;
+            background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/09b6d396910357.5eb9652671c66.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in forwards;
+             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+       
+
+     header {
+    background: url('https://www.shutterstock.com/image-vector/korean-street-food-banner-horizontal-260nw-2239916033.jpg') no-repeat center/cover;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideDown 1s ease-out;
+}
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+
+        h1, h2, h3, p {
+            font-size: 24px;
+            color: var(--black);
+          
+            padding: 10px;
+            border-radius: 8px;
+            line-height: 1.6;
+            display: inline-block;
+            max-width: 90%;
+        }
+
+        .clickable-button {
+            color: var(--white);
+           
+            font-size: 16px;
+            font-weight: bold;
+           
+            transition: all 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+               background-color: #ffbf69;
+            border: none;
+            padding: 10px 20px;
+           
+            border-radius: 5px;
+            transition: 0.3s;
+             position: relative;
+    left: -40px;
+        }
+
+        .clickable-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+             background-color: #ff9f1c;
+        }
+
+        .pagkain {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            display: block;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            cursor: pointer;
+            border: 2px solid black;
+            animation: fadeInUp 1s ease-in-out;
+              width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 10px;
+           
+        
+        }
+
+
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .pagkain:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px var(--hover-glow);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            width: 100%;
+            font-size: 14px;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+                section {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #ff6b35;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }

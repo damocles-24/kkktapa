@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Filipino Street Foods</title>
+    <link rel="stylesheet" href="st.css">
+        <link rel="icon" href="icons.png" type="image/png">
+</head>
+<body style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/09b6d396910357.5eb9652671c66.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat; 
+    background-position: center; ">
+
+<header>
+    <h1>Popular Filipino Street Foods</h1>
+    <nav>
+        <a href="website.html" class="haha">⬅ Back to Home</a>
+
+    </nav>
+</header>
+
+<main>
+    <h1>1. Balut</h1>
+    <img src="https://gttp.images.tshiftcdn.com/261640/x/0/philippines-street-food-balut.jpg" class="food" onclick="showPopup(0)">
+    <p>Balut is a popular Filipino street food made from a fertilized duck egg that's incubated and then boiled or steamed.</p>
+    <a href="https://youtu.be/VfLX72NBV-I?si=1CXwdsYyQsjiUS1O" target="_blank" class="recipe-link">How to Cook Balut</a>
+   <br>
+
+    <h1>2. Isaw</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfAGy1_O42lBWvAxlGekJp43JeJDTYzCFHeT2iPYmbitlr-g&s" class="food" onclick="showPopup(1)">
+    <p>Isaw is a popular Filipino street food made from barbecued pig or chicken intestines.</p>
+    <a href="https://youtu.be/Ljy3vz2z6pg?si=qDl6TSxH1ziayojM" target="_blank" class="recipe-link">How to Cook Isaw</a>
+<br>
+
+    <h1>3. Kwek-Kwek</h1>
+    <img src="https://panlasangpinoy.com/wp-content/uploads/2009/09/kwekkwek.jpg" class="food" onclick="showPopup(2)">
+    <p>Kwek-Kwek are deep-fried quail eggs coated in a bright orange batter.</p>
+    <a href="https://youtu.be/jxU-KFfN_bw?si=l_HaFueoexIgtRxG" target="_blank" class="recipe-link">How to Cook Kwek-Kwek</a>
+<br>
+
+<h1>4. Fishball</h1>
+<img src="https://i.pinimg.com/564x/cf/ca/03/cfca03fa5cf26f0a713bc88e0eb2c631.jpg" class="food" onclick="showPopup(3)">
+<p>Fish balls are made from fish paste and are boiled or deep-fried.</p>
+<a href="https://youtu.be/K75GlohSpa8?si=hML5mJPyk5M7CWuA" target="_blank" class="recipe-link">How to Cook Fishballs</a>
+<br>
+
+<h1>5. Betamax (Dugo)</h1>
+<img src="https://www.pinoyrecipe.net/wp-content/uploads/2017/08/Betamax-or-Grilled-Chicken-Blood.jpg" class="food" onclick="showPopup(4)">
+<p>Betamax is coagulated chicken blood that is skewered and grilled.</p>
+<a href="https://youtu.be/jnx0T1-lYIs?si=c2W729qsDa3bmouF" target="_blank" class="recipe-link">How to Cook Betamax</a>
+<br>
+
+<h1>6. Adidas</h1>
+<img src="https://i.pinimg.com/736x/d0/e3/93/d0e3932c1af117e47e31c06b69012e59.jpg" class="food" onclick="showPopup(5)">
+<P>Adidas is grilled chicken feet marinated in soy sauce and vinegar.</P>
+<a href="https://youtu.be/IRWQmzCK2qg?si=VX0DnKHM1l_5vdEC" target="_blank" class="recipe-link">How to Cook Adidas</a>
+
+<h1>7. Palabok</h1>
+<img src="https://www.holidify.com/images/cmsuploads/compressed/Pancit_Palabok_20201217194017.jpg" class="food" onclick="showPopup(6)">
+<p>Palabok is a Filipino noodle dish with shrimp sauce and toppings.</p>
+<a href="https://youtu.be/SqrkQ1MNMTs?si=ZtNmps3tgYMxL9bF" target="_blank" class="recipe-link">How to Cook Palabok</a>
+<br>
+<h1>8. Chicken Proben</h1>
+<img src="https://dfoodpals908835493.wordpress.com/wp-content/uploads/2022/10/testefd-1.jpg" class="food" onclick="showPopup(7)">
+<p>Proben is a popular Filipino street food made from deep-fried chicken proventriculus. It's also known as "chicken proben".</p>
+<a href="https://youtu.be/UZIO85DE2YQ?si=D2bmjgPYnhDle6nT" target="_blank" class="recipe-link">How to Cook Chicken Proben</a>
+
+<br>
+<br>
+<br>
+
+</main>
+
+<div id="image-popup" class="popup" onclick="closePopup()">
+    <img id="popup-img" src="" alt="Street Food">
+    <div>
+        <button onclick="prevImage(event)">⬅</button>
+        <button onclick="nextImage(event)">➡</button>
+    </div>
+</div>
+
+<script>
+   let images = [
+    "https://gttp.images.tshiftcdn.com/261640/x/0/philippines-street-food-balut.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfAGy1_O42lBWvAxlGekJp43JeJDTYzCFHeT2iPYmbitlr-g&s",
+    "https://panlasangpinoy.com/wp-content/uploads/2009/09/kwekkwek.jpg",
+    "https://i.pinimg.com/564x/cf/ca/03/cfca03fa5cf26f0a713bc88e0eb2c631.jpg",
+    "https://www.pinoyrecipe.net/wp-content/uploads/2017/08/Betamax-or-Grilled-Chicken-Blood.jpg",
+    "https://i.pinimg.com/736x/d0/e3/93/d0e3932c1af117e47e31c06b69012e59.jpg",
+    "https://www.holidify.com/images/cmsuploads/compressed/Pancit_Palabok_20201217194017.jpg",
+    "https://dfoodpals908835493.wordpress.com/wp-content/uploads/2022/10/testefd-1.jpg"
+];
+
+let currentIndex = 0;
+
+document.getElementById('image-popup').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('image-popup')) {
+        closePopup();
+    }
+});
+
+function showPopup(index) {
+    currentIndex = index;
+    const popupImg = document.getElementById('popup-img');
+    popupImg.src = images[currentIndex];
+    popupImg.style.opacity = 0;
+    document.getElementById('image-popup').style.display = 'flex';
+    setTimeout(() => popupImg.style.opacity = 1, 100);
+}
+
+function closePopup() {
+    document.getElementById('image-popup').style.display = 'none';
+}
+
+function nextImage(event) {
+    event.stopPropagation();
+    changeImage(1);
+}
+
+function prevImage(event) {
+    event.stopPropagation();
+    changeImage(-1);
+}
+
+function changeImage(direction) {
+    const popupImg = document.getElementById('popup-img');
+    popupImg.style.opacity = 0;
+    setTimeout(() => {
+        currentIndex = (currentIndex + direction + images.length) % images.length;
+        popupImg.src = images[currentIndex];
+        popupImg.style.opacity = 1;
+    }, 300); 
+}
+
+
+</script>
+   <footer>
+        <p>&copy; 2025 Filipino Street Foods. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
